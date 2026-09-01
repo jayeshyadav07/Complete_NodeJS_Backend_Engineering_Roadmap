@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Node.js Backend Engineering Roadmap (2026)</title>
+<style>
+:root{
+ --bg:#0b1220;--panel:#111827;--card:#1f2937;--text:#e5e7eb;--muted:#9ca3af;
+ --accent:#38bdf8;--green:#22c55e;--border:#334155;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.container{max-width:1200px;margin:auto;padding:32px}
+header{text-align:center;padding:24px 0 36px;border-bottom:1px solid var(--border)}
+h1{font-size:2.7rem;margin:0}
+h2{color:var(--accent);margin-top:0}
+h3{color:#bae6fd}
+h4{color:#7dd3fc}
+section{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:28px;margin:24px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0}
+th,td{border:1px solid var(--border);padding:10px}
+th{background:#0f172a}
+code{background:#020617;padding:2px 5px;border-radius:4px}
+pre{background:#020617;padding:14px;border-radius:8px;overflow:auto;border:1px solid var(--border)}
+.badge{display:inline-block;background:#0ea5e9;color:#00131c;padding:4px 10px;border-radius:999px;font-weight:700;font-size:.85rem}
+.check{color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+nav{background:#111827;border:1px solid var(--border);padding:20px;border-radius:14px}
+nav ol{columns:2}
+@media(max-width:700px){nav ol{columns:1} h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Complete Node.js Backend Engineering Roadmap</h1>
+<p>Beginner → Job Ready → Production Backend Engineer</p>
+<span class="badge">68+ Core Topics • Interview Prep • Projects • Production Skills</span>
+</header>
+
+<nav>
+<h2>Roadmap</h2>
+<ol>
+<li>Programming Fundamentals</li>
+<li>Advanced JavaScript</li>
+<li>TypeScript</li>
+<li>Node.js Core</li>
+<li>Express.js</li>
+<li>PostgreSQL</li>
+<li>Prisma ORM</li>
+<li>Authentication</li>
+<li>API Security</li>
+<li>Advanced Backend</li>
+<li>Linux</li>
+<li>Docker</li>
+<li>AWS</li>
+<li>Testing</li>
+<li>CI/CD</li>
+<li>Capstone Project</li>
+</ol>
+</nav>
+
+<section>
+<h2>Learning Timeline</h2>
+<table>
+<tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+<tr><td>Programming Fundamentals</td><td>3 weeks</td><td>Write JavaScript confidently</td></tr>
+<tr><td>Advanced JavaScript</td><td>4 weeks</td><td>Interview-ready JS</td></tr>
+<tr><td>TypeScript</td><td>2 weeks</td><td>Production typing</td></tr>
+<tr><td>Node.js Core</td><td>3 weeks</td><td>Understand runtime internals</td></tr>
+<tr><td>Express APIs</td><td>3 weeks</td><td>Build REST APIs</td></tr>
+<tr><td>PostgreSQL</td><td>4 weeks</td><td>Database mastery</td></tr>
+<tr><td>Advanced Backend + Deployment</td><td>8 weeks</td><td>Production engineer</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Phase 1 – Programming Fundamentals</h2>
+
+<h3>Module 1 – Variables & Data Types</h3>
+<div class="grid">
+<div class="card"><h4>Learn</h4><ul><li><code>let</code></li><li><code>const</code></li><li><code>var</code></li><li>Primitive Types</li></ul></div>
+<div class="card"><h4>Understand</h4><ul><li>Memory</li><li>Type coercion</li><li>Truthy/Falsy</li></ul></div>
+<div class="card"><h4>Practice</h4><ul><li>Calculator</li><li>Temperature converter</li></ul></div>
+</div>
+
+<h3>Module 2 – Operators</h3>
+<ul>
+<li>Arithmetic</li>
+<li>Comparison</li>
+<li>Logical</li>
+<li>Assignment</li>
+<li>Bitwise</li>
+<li>Ternary</li>
+<li>Nullish Coalescing</li>
+<li>Optional Chaining</li>
+</ul>
+
+<h3>Module 3 – Control Flow</h3>
+<ul>
+<li><code>if</code>, <code>else</code>, <code>switch</code></li>
+<li><code>for</code>, <code>while</code>, <code>do...while</code></li>
+<li><code>break</code>, <code>continue</code></li>
+</ul>
+
+<h3>Module 4 – Functions</h3>
+<ul>
+<li>Declarations</li>
+<li>Expressions</li>
+<li>Arrow Functions</li>
+<li>Default Parameters</li>
+<li>Rest Parameters</li>
+<li>Return Values</li>
+<li>Scope</li>
+<li>Hoisting</li>
+</ul>
+
+<h3>Module 5 – Arrays</h3>
+<p>Master every commonly used method.</p>
+<div class="grid">
+<div class="card"><h4>Basic</h4><ul><li>push</li><li>pop</li><li>shift</li><li>unshift</li></ul></div>
+<div class="card"><h4>Intermediate</h4><ul><li>slice</li><li>splice</li><li>concat</li><li>includes</li></ul></div>
+<div class="card"><h4>Advanced</h4><ul><li>map</li><li>filter</li><li>reduce</li><li>find</li><li>every</li><li>some</li><li>flat</li><li>sort</li></ul></div>
+</div>
+
+<h3>Module 6 – Objects</h3>
+<ul>
+<li>Object Creation</li>
+<li>Nested Objects</li>
+<li>Methods</li>
+<li><code>this</code></li>
+<li>Destructuring</li>
+<li>Spread & Rest</li>
+<li><code>Object.keys()</code></li>
+<li><code>Object.values()</code></li>
+<li><code>Object.entries()</code></li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 2 – Advanced JavaScript</h2>
+
+<h3>Execution Context</h3>
+<ul><li>Creation Phase</li><li>Execution Phase</li><li>Call Stack</li></ul>
+
+<h3>Closures</h3>
+<ul><li>Lexical Scope</li><li>Private Variables</li><li>Memoization</li><li>Factory Functions</li></ul>
+
+<h3>Higher Order Functions</h3>
+<ul><li>Callbacks</li><li>Function Composition</li><li>Currying</li></ul>
+
+<h3>Prototype System</h3>
+<ul>
+<li>Prototype Chain</li>
+<li><code>__proto__</code></li>
+<li><code>prototype</code></li>
+<li>Inheritance</li>
+</ul>
+
+<h3>Classes</h3>
+<ul><li>Constructors</li><li>Private Fields</li><li>Inheritance</li><li>Static Methods</li></ul>
+
+<h3>Async JavaScript</h3>
+<ol><li>Callbacks</li><li>Promises</li><li>Promise Chaining</li><li>Async/Await</li><li>Error Handling</li></ol>
+
+<h3>Promise Methods</h3>
+<ul><li>Promise.all</li><li>Promise.allSettled</li><li>Promise.any</li><li>Promise.race</li></ul>
+
+<h3>Event Loop</h3>
+<ul>
+<li>Call Stack</li>
+<li>Microtask Queue</li>
+<li>Callback Queue</li>
+<li><code>setTimeout</code></li>
+<li><code>queueMicrotask</code></li>
+<li><code>process.nextTick</code></li>
+</ul>
+
+<h3>Error Handling</h3>
+<ul><li>try/catch/finally</li><li>Custom Errors</li><li>Stack Traces</li></ul>
+</section>
+
+<section>
+<h2>Phase 3 – TypeScript</h2>
+<div class="grid">
+<div class="card"><h4>Core Types</h4><ul><li>Primitive Types</li><li>Arrays</li><li>Tuples</li><li>Objects</li></ul></div>
+<div class="card"><h4>Advanced Types</h4><ul><li>Union</li><li>Intersection</li><li>Literal</li><li>Enums</li></ul></div>
+<div class="card"><h4>Professional</h4><ul><li>Generics</li><li>Utility Types</li><li>Modules</li><li>Declaration Files</li></ul></div>
+</div>
+
+<h3>Utility Types</h3>
+<ul>
+<li>Partial</li>
+<li>Required</li>
+<li>Pick</li>
+<li>Omit</li>
+<li>Record</li>
+<li>Readonly</li>
+<li>ReturnType</li>
+</ul>
+
+<pre><code>interface User {
+  id:number;
+  name:string;
+}</code></pre>
+</section>
+
+<section>
+<h2>Phase 4 – Node.js Core</h2>
+
+<h3>Runtime Internals</h3>
+<ul>
+<li>V8 Engine</li>
+<li>libuv</li>
+<li>Event Loop</li>
+<li>Thread Pool</li>
+<li>Worker Threads</li>
+<li>Cluster Module</li>
+</ul>
+
+<h3>Modules</h3>
+<ul><li>CommonJS</li><li>ES Modules</li><li>Dynamic Import</li></ul>
+
+<h3>Core Modules</h3>
+<div class="grid">
+<div class="card"><ul><li>fs</li><li>path</li><li>os</li><li>http</li></ul></div>
+<div class="card"><ul><li>https</li><li>crypto</li><li>stream</li><li>buffer</li></ul></div>
+<div class="card"><ul><li>events</li><li>process</li><li>timers</li><li>url</li></ul></div>
+</div>
+
+<h3>Streams</h3>
+<ul><li>Readable</li><li>Writable</li><li>Duplex</li><li>Transform</li><li>Piping</li><li>Backpressure</li></ul>
+
+<h3>Buffers</h3>
+<ul><li>Binary Data</li><li>Encoding</li><li>Base64</li></ul>
+
+<h3>Environment Variables</h3>
+<ul><li>.env</li><li>dotenv</li><li>Configuration Management</li></ul>
+
+<h3>Performance Topics</h3>
+<ul>
+<li>Memory Leaks</li>
+<li>CPU-bound Tasks</li>
+<li>Worker Threads</li>
+<li>Event Loop Blocking</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 5 – Express.js & REST APIs</h2>
+
+<h3>Express Fundamentals</h3>
+<ul><li>Server</li><li>Routing</li><li>Middleware</li><li>Controllers</li><li>Services</li></ul>
+
+<h3>HTTP</h3>
+<ul><li>Methods</li><li>Status Codes</li><li>Headers</li><li>Content Types</li></ul>
+
+<h3>REST API Design</h3>
+<ul>
+<li>Resource Naming</li>
+<li>Pagination</li>
+<li>Filtering</li>
+<li>Sorting</li>
+<li>Versioning</li>
+<li>Idempotency</li>
+</ul>
+
+<h3>Validation</h3>
+<ul><li>Zod</li><li>Joi</li><li>Express Validator</li></ul>
+
+<h3>Error Handling</h3>
+<ul><li>Global Error Middleware</li><li>Async Wrapper</li><li>Logging</li></ul>
+
+<h3>API Documentation</h3>
+<ul><li>OpenAPI</li><li>Swagger UI</li></ul>
+
+<h3>Project Structure</h3>
+<pre><code>src/
+  routes/
+  controllers/
+  services/
+  repositories/
+  middleware/
+  utils/
+  config/</code></pre>
+</section>
+
+<section>
+<h2>Phase 6 – PostgreSQL</h2>
+
+<h3>SQL Fundamentals</h3>
+<ul><li>SELECT</li><li>INSERT</li><li>UPDATE</li><li>DELETE</li></ul>
+
+<h3>Filtering & Sorting</h3>
+<ul><li>WHERE</li><li>LIKE</li><li>IN</li><li>BETWEEN</li><li>ORDER BY</li><li>LIMIT</li><li>OFFSET</li></ul>
+
+<h3>Joins</h3>
+<ul><li>INNER</li><li>LEFT</li><li>RIGHT</li><li>FULL</li><li>SELF JOIN</li></ul>
+
+<h3>Aggregation</h3>
+<ul><li>COUNT</li><li>SUM</li><li>AVG</li><li>MIN</li><li>MAX</li><li>GROUP BY</li><li>HAVING</li></ul>
+
+<h3>Database Design</h3>
+<ul>
+<li>Normalization (1NF–3NF)</li>
+<li>Foreign Keys</li>
+<li>Cascading Deletes</li>
+<li>Unique Constraints</li>
+</ul>
+
+<h3>Indexes (Interview Favorite)</h3>
+<ul>
+<li>B-tree</li>
+<li>Composite</li>
+<li>Partial</li>
+<li>Unique</li>
+<li>GIN</li>
+<li>BRIN</li>
+<li>EXPLAIN ANALYZE</li>
+</ul>
+
+<h3>Transactions</h3>
+<ul><li>BEGIN</li><li>COMMIT</li><li>ROLLBACK</li><li>Isolation Levels</li><li>Deadlocks</li></ul>
+
+<h3>Advanced PostgreSQL</h3>
+<ul>
+<li>CTEs</li>
+<li>Window Functions</li>
+<li>JSONB</li>
+<li>Views</li>
+<li>Materialized Views</li>
+<li>Triggers</li>
+<li>Functions</li>
+<li>Partitioning</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 7 – Prisma ORM</h2>
+<ul>
+<li>Schema Modeling</li>
+<li>Migrations</li>
+<li>CRUD</li>
+<li>Relations</li>
+<li>Transactions</li>
+<li>Raw SQL</li>
+<li>Connection Pooling</li>
+<li>Performance Optimization</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 8 – Authentication & Security</h2>
+
+<h3>Authentication</h3>
+<ul>
+<li>bcrypt</li>
+<li>JWT</li>
+<li>Access Tokens</li>
+<li>Refresh Tokens</li>
+<li>Cookie Authentication</li>
+<li>Sessions</li>
+<li>OAuth Basics</li>
+</ul>
+
+<h3>Authorization</h3>
+<ul><li>RBAC</li><li>Permission Systems</li></ul>
+
+<h3>Security</h3>
+<ul>
+<li>Helmet</li>
+<li>CORS</li>
+<li>Rate Limiting</li>
+<li>Input Validation</li>
+<li>SQL Injection Prevention</li>
+<li>XSS</li>
+<li>CSRF</li>
+<li>Password Policies</li>
+<li>Environment Secrets</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 9 – Advanced Backend Engineering</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Redis</h3>
+<ul><li>Caching</li><li>Sessions</li><li>TTL</li><li>Rate Limiting</li></ul>
+</div>
+
+<div class="card">
+<h3>WebSockets</h3>
+<ul><li>Socket.IO</li><li>Real-time Chat</li><li>Presence</li></ul>
+</div>
+
+<div class="card">
+<h3>Queues</h3>
+<ul><li>BullMQ</li><li>RabbitMQ</li><li>Kafka Basics</li><li>Retry Strategies</li></ul>
+</div>
+
+<div class="card">
+<h3>File Uploads</h3>
+<ul><li>Multer</li><li>AWS S3</li><li>Image Processing</li></ul>
+</div>
+
+<div class="card">
+<h3>Logging</h3>
+<ul><li>Pino</li><li>Winston</li><li>Structured Logs</li></ul>
+</div>
+
+<div class="card">
+<h3>Monitoring</h3>
+<ul><li>Health Checks</li><li>Prometheus Basics</li><li>Grafana Basics</li></ul>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Phase 10 – Linux for Backend Developers</h2>
+
+<h3>Essential Commands</h3>
+<ul>
+<li>ls</li>
+<li>cd</li>
+<li>pwd</li>
+<li>grep</li>
+<li>find</li>
+<li>chmod</li>
+<li>chown</li>
+<li>ps</li>
+<li>kill</li>
+<li>top</li>
+<li>systemctl</li>
+<li>journalctl</li>
+<li>ssh</li>
+<li>scp</li>
+<li>tar</li>
+<li>curl</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 11 – Docker</h2>
+<ul>
+<li>Images</li>
+<li>Containers</li>
+<li>Volumes</li>
+<li>Networks</li>
+<li>Dockerfile</li>
+<li>Docker Compose</li>
+<li>Multi-stage Builds</li>
+<li>Container Best Practices</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 12 – AWS</h2>
+
+<div class="grid">
+<div class="card"><h3>Compute</h3><ul><li>EC2</li><li>Security Groups</li><li>SSH</li></ul></div>
+<div class="card"><h3>Storage</h3><ul><li>S3</li><li>Lifecycle Rules</li></ul></div>
+<div class="card"><h3>Database</h3><ul><li>RDS PostgreSQL</li><li>Backups</li></ul></div>
+<div class="card"><h3>Operations</h3><ul><li>IAM</li><li>CloudWatch</li><li>Environment Variables</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2>Phase 13 – Testing</h2>
+<ul>
+<li>Jest</li>
+<li>Supertest</li>
+<li>Unit Testing</li>
+<li>Integration Testing</li>
+<li>Mocking</li>
+<li>Test Coverage</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 14 – CI/CD</h2>
+<ul>
+<li>Git</li>
+<li>GitHub Flow</li>
+<li>Pull Requests</li>
+<li>GitHub Actions</li>
+<li>Automated Testing</li>
+<li>Docker Build Pipeline</li>
+<li>Deployment Workflow</li>
+</ul>
+</section>
+
+<section>
+<h2>Final Capstone Project</h2>
+
+<p>Build a <strong>Production-Ready E-commerce Backend</strong>.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Core Features</h3>
+<ul>
+<li>User Authentication</li>
+<li>Refresh Tokens</li>
+<li>Products</li>
+<li>Categories</li>
+<li>Shopping Cart</li>
+<li>Orders</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Advanced Features</h3>
+<ul>
+<li>Redis Cache</li>
+<li>Background Jobs</li>
+<li>File Uploads</li>
+<li>Payments</li>
+<li>Swagger Docs</li>
+<li>Docker Deployment</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Production Features</h3>
+<ul>
+<li>Logging</li>
+<li>Monitoring</li>
+<li>Rate Limiting</li>
+<li>Testing</li>
+<li>CI/CD</li>
+<li>AWS Deployment</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Complete Job-Ready Checklist</h2>
+
+<div class="grid">
+<div class="card"><h3>JavaScript</h3><p class="check">✓ Event Loop ✓ Closures ✓ Async</p></div>
+<div class="card"><h3>TypeScript</h3><p class="check">✓ Generics ✓ Utility Types</p></div>
+<div class="card"><h3>Node.js</h3><p class="check">✓ Streams ✓ Buffers ✓ Worker Threads</p></div>
+<div class="card"><h3>Express</h3><p class="check">✓ Middleware ✓ REST APIs</p></div>
+<div class="card"><h3>PostgreSQL</h3><p class="check">✓ Joins ✓ Indexes ✓ Transactions</p></div>
+<div class="card"><h3>Prisma</h3><p class="check">✓ Relations ✓ Migrations</p></div>
+<div class="card"><h3>Security</h3><p class="check">✓ JWT ✓ RBAC ✓ OWASP</p></div>
+<div class="card"><h3>Infrastructure</h3><p class="check">✓ Linux ✓ Docker ✓ AWS</p></div>
+<div class="card"><h3>Testing</h3><p class="check">✓ Jest ✓ Supertest</p></div>
+<div class="card"><h3>CI/CD</h3><p class="check">✓ GitHub Actions</p></div>
+<div class="card"><h3>Projects</h3><p class="check">✓ 3–5 Production Projects</p></div>
+</div>
+</section>
+
+<footer style="text-align:center;color:#94a3b8;padding:30px">
+<p>This expanded HTML roadmap includes the previously omitted topics such as prototypes, classes, libuv, worker threads, Node core modules, Promise methods, normalization, GIN/BRIN indexes, OAuth, monitoring, logging, Docker Compose, IAM, CloudWatch, GitHub Flow, Swagger, and production engineering concepts.</p>
+</footer>
+
+</div>
+</body>
+</html>
