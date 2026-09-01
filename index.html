@@ -37,7 +37,7 @@ nav ol{columns:2}
 <header>
 <h1>Complete Node.js Backend Engineering Roadmap</h1>
 <p>Beginner → Job Ready → Production Backend Engineer</p>
-<span class="badge">68+ Core Topics • Interview Prep • Projects • Production Skills</span>
+<span class="badge">100+ Core Topics • Interview Prep • Projects • Production Skills</span>
 </header>
 
 <nav>
@@ -50,14 +50,22 @@ nav ol{columns:2}
 <li>Express.js</li>
 <li>PostgreSQL</li>
 <li>Prisma ORM</li>
-<li>Authentication</li>
-<li>API Security</li>
+<li>Authentication & Security</li>
 <li>Advanced Backend</li>
+<li>Code Quality & Tooling</li>
+<li>Dependency Management</li>
 <li>Linux</li>
 <li>Docker</li>
 <li>AWS</li>
 <li>Testing</li>
+<li>Observability & Tracing</li>
+<li>Error Tracking</li>
+<li>Performance Optimization</li>
+<li>Advanced Security</li>
+<li>Database HA & Replication</li>
+<li>Feature Flags</li>
 <li>CI/CD</li>
+<li>Deployment Strategies</li>
 <li>Capstone Project</li>
 </ol>
 </nav>
@@ -72,7 +80,16 @@ nav ol{columns:2}
 <tr><td>Node.js Core</td><td>3 weeks</td><td>Understand runtime internals</td></tr>
 <tr><td>Express APIs</td><td>3 weeks</td><td>Build REST APIs</td></tr>
 <tr><td>PostgreSQL</td><td>4 weeks</td><td>Database mastery</td></tr>
-<tr><td>Advanced Backend + Deployment</td><td>8 weeks</td><td>Production engineer</td></tr>
+<tr><td>Authentication & Security</td><td>2 weeks</td><td>Secure systems</td></tr>
+<tr><td>Advanced Backend</td><td>4 weeks</td><td>Redis, Queues, WebSockets, Search</td></tr>
+<tr><td>Code Quality & Tools</td><td>1 week</td><td>Professional code standards</td></tr>
+<tr><td>Linux & DevOps</td><td>3 weeks</td><td>System administration basics</td></tr>
+<tr><td>Docker & Containers</td><td>2 weeks</td><td>Containerization mastery</td></tr>
+<tr><td>AWS & Cloud</td><td>3 weeks</td><td>Cloud deployment skills</td></tr>
+<tr><td>Testing & Quality</td><td>2 weeks</td><td>Comprehensive test coverage</td></tr>
+<tr><td>Observability & Tracing</td><td>2 weeks</td><td>Production monitoring</td></tr>
+<tr><td>Deployment Strategies</td><td>2 weeks</td><td>Zero-downtime deployments</td></tr>
+<tr><td>Capstone Project</td><td>4-6 weeks</td><td>Production-ready system</td></tr>
 </table>
 </section>
 
@@ -415,11 +432,61 @@ nav ol{columns:2}
 <h3>Monitoring</h3>
 <ul><li>Health Checks</li><li>Prometheus Basics</li><li>Grafana Basics</li></ul>
 </div>
+
+<div class="card">
+<h3>GraphQL</h3>
+<ul><li>Query Language</li><li>Apollo Server</li><li>Resolvers</li><li>Schema Design</li><li>DataLoader (N+1)</li></ul>
+</div>
+
+<div class="card">
+<h3>Search & Indexing</h3>
+<ul><li>Elasticsearch Basics</li><li>Full-text Search</li><li>Aggregations</li></ul>
+</div>
+
+<div class="card">
+<h3>API Gateway & Load Balancing</h3>
+<ul><li>Nginx Basics</li><li>AWS API Gateway</li><li>Kong</li><li>Reverse Proxy</li></ul>
+</div>
+
+<div class="card">
+<h3>Microservices Patterns</h3>
+<ul><li>Service Discovery</li><li>Inter-service Communication</li><li>API Composition</li><li>Data Consistency</li></ul>
+</div>
+
+<div class="card">
+<h3>Email Services</h3>
+<ul><li>Nodemailer</li><li>SendGrid</li><li>Email Templates</li><li>Queue Integration</li></ul>
+</div>
 </div>
 </section>
 
 <section>
-<h2>Phase 10 – Linux for Backend Developers</h2>
+<h2>Phase 10 – Code Quality & Tooling</h2>
+<ul>
+<li>ESLint</li>
+<li>Prettier</li>
+<li>Husky (Git Hooks)</li>
+<li>Pre-commit Hooks</li>
+<li>Code Formatting Standards</li>
+<li>Linting Rules</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 11 – Dependency Management & Package Management</h2>
+<ul>
+<li>npm Best Practices</li>
+<li>Yarn / pnpm</li>
+<li>Semantic Versioning</li>
+<li>Dependency Resolution</li>
+<li>Lock Files</li>
+<li>Security Audits (npm audit)</li>
+<li>Outdated Dependency Management</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 12 – Linux for Backend Developers</h2>
 
 <h3>Essential Commands</h3>
 <ul>
@@ -443,7 +510,7 @@ nav ol{columns:2}
 </section>
 
 <section>
-<h2>Phase 11 – Docker</h2>
+<h2>Phase 13 – Docker</h2>
 <ul>
 <li>Images</li>
 <li>Containers</li>
@@ -457,7 +524,7 @@ nav ol{columns:2}
 </section>
 
 <section>
-<h2>Phase 12 – AWS</h2>
+<h2>Phase 14 – AWS</h2>
 
 <div class="grid">
 <div class="card"><h3>Compute</h3><ul><li>EC2</li><li>Security Groups</li><li>SSH</li></ul></div>
@@ -468,7 +535,7 @@ nav ol{columns:2}
 </section>
 
 <section>
-<h2>Phase 13 – Testing</h2>
+<h2>Phase 15 – Testing</h2>
 <ul>
 <li>Jest</li>
 <li>Supertest</li>
@@ -480,7 +547,82 @@ nav ol{columns:2}
 </section>
 
 <section>
-<h2>Phase 14 – CI/CD</h2>
+<h2>Phase 16 – Observability & Distributed Tracing</h2>
+<ul>
+<li>Distributed Tracing Concepts</li>
+<li>Jaeger</li>
+<li>Zipkin</li>
+<li>Trace Context</li>
+<li>APM Tools (New Relic, Datadog)</li>
+<li>Request Correlation IDs</li>
+<li>OpenTelemetry Basics</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 17 – Error Tracking & Incident Management</h2>
+<ul>
+<li>Sentry</li>
+<li>Rollbar</li>
+<li>Error Aggregation</li>
+<li>Alert Rules</li>
+<li>On-call Rotation</li>
+<li>Incident Response</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 18 – Performance Optimization</h2>
+<ul>
+<li>Node.js Profiling (0x, clinic.js)</li>
+<li>Memory Profiling</li>
+<li>CPU Optimization</li>
+<li>Caching Strategies (Cache Invalidation, TTL, Warming)</li>
+<li>Database Query Optimization</li>
+<li>Connection Pooling</li>
+<li>Load Testing (Apache JMeter, k6)</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 19 – Advanced Security</h2>
+<ul>
+<li>SSL/TLS & HTTPS</li>
+<li>Certificate Management</li>
+<li>Encryption at Rest</li>
+<li>Key Management (AWS KMS, HashiCorp Vault)</li>
+<li>API Security Headers</li>
+<li>OWASP Top 10 Deep Dive</li>
+<li>Dependency Vulnerability Scanning</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 20 – Database High Availability & Replication</h2>
+<ul>
+<li>Master-Slave Replication</li>
+<li>Master-Master Setup</li>
+<li>Read Replicas</li>
+<li>Failover Strategies</li>
+<li>Backup & Recovery</li>
+<li>Point-in-time Recovery</li>
+<li>Database Sharding Basics</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 21 – Feature Flags & Feature Toggle</h2>
+<ul>
+<li>Feature Toggle Implementation</li>
+<li>LaunchDarkly Basics</li>
+<li>Canary Deployments</li>
+<li>A/B Testing Infrastructure</li>
+<li>Gradual Rollout Strategies</li>
+</ul>
+</section>
+
+<section>
+<h2>Phase 22 – CI/CD</h2>
 <ul>
 <li>Git</li>
 <li>GitHub Flow</li>
@@ -493,44 +635,67 @@ nav ol{columns:2}
 </section>
 
 <section>
+<h2>Phase 23 – Deployment Strategies & Zero-Downtime Deployments</h2>
+<ul>
+<li>Blue-Green Deployment</li>
+<li>Canary Deployment</li>
+<li>Rolling Deployment</li>
+<li>Zero-Downtime Deployment Techniques</li>
+<li>Database Migration Strategies</li>
+<li>Rollback Procedures</li>
+<li>Load Balancer Configuration</li>
+</ul>
+</section>
+
+<section>
 <h2>Final Capstone Project</h2>
 
-<p>Build a <strong>Production-Ready E-commerce Backend</strong>.</p>
+<p>Build <strong>Production-Ready Systems</strong> with multiple complexity levels:</p>
 
 <div class="grid">
 <div class="card">
-<h3>Core Features</h3>
+<h3>Level 1: E-commerce Backend</h3>
 <ul>
-<li>User Authentication</li>
-<li>Refresh Tokens</li>
-<li>Products</li>
-<li>Categories</li>
-<li>Shopping Cart</li>
-<li>Orders</li>
+<li>REST API with Express</li>
+<li>PostgreSQL + Prisma</li>
+<li>JWT Authentication</li>
+<li>Payment Processing</li>
+<li>File Uploads (S3)</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Advanced Features</h3>
+<h3>Level 2: Multi-Service Platform</h3>
 <ul>
-<li>Redis Cache</li>
-<li>Background Jobs</li>
-<li>File Uploads</li>
-<li>Payments</li>
-<li>Swagger Docs</li>
-<li>Docker Deployment</li>
+<li>GraphQL API</li>
+<li>Redis Caching</li>
+<li>Message Queues (BullMQ)</li>
+<li>WebSockets (Real-time)</li>
+<li>Search (Elasticsearch)</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Production Features</h3>
+<h3>Level 3: Enterprise System</h3>
 <ul>
-<li>Logging</li>
-<li>Monitoring</li>
-<li>Rate Limiting</li>
-<li>Testing</li>
-<li>CI/CD</li>
-<li>AWS Deployment</li>
+<li>Microservices Architecture</li>
+<li>Database Replication & HA</li>
+<li>Distributed Tracing</li>
+<li>API Gateway (Nginx/Kong)</li>
+<li>Blue-Green Deployment</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Core Requirements (All Levels)</h3>
+<ul>
+<li>Comprehensive Testing</li>
+<li>CI/CD Pipeline</li>
+<li>Docker & Kubernetes</li>
+<li>Observability & Monitoring</li>
+<li>Security Best Practices</li>
+<li>Code Quality Tools</li>
+<li>Documentation</li>
 </ul>
 </div>
 </div>
@@ -546,16 +711,21 @@ nav ol{columns:2}
 <div class="card"><h3>Express</h3><p class="check">✓ Middleware ✓ REST APIs</p></div>
 <div class="card"><h3>PostgreSQL</h3><p class="check">✓ Joins ✓ Indexes ✓ Transactions</p></div>
 <div class="card"><h3>Prisma</h3><p class="check">✓ Relations ✓ Migrations</p></div>
-<div class="card"><h3>Security</h3><p class="check">✓ JWT ✓ RBAC ✓ OWASP</p></div>
-<div class="card"><h3>Infrastructure</h3><p class="check">✓ Linux ✓ Docker ✓ AWS</p></div>
-<div class="card"><h3>Testing</h3><p class="check">✓ Jest ✓ Supertest</p></div>
-<div class="card"><h3>CI/CD</h3><p class="check">✓ GitHub Actions</p></div>
-<div class="card"><h3>Projects</h3><p class="check">✓ 3–5 Production Projects</p></div>
+<div class="card"><h3>Security</h3><p class="check">✓ JWT ✓ RBAC ✓ OWASP ✓ SSL/TLS</p></div>
+<div class="card"><h3>GraphQL</h3><p class="check">✓ Schemas ✓ Resolvers ✓ DataLoader</p></div>
+<div class="card"><h3>Advanced Backend</h3><p class="check">✓ Redis ✓ Queues ✓ WebSockets ✓ Search</p></div>
+<div class="card"><h3>Infrastructure</h3><p class="check">✓ Linux ✓ Docker ✓ AWS ✓ Nginx</p></div>
+<div class="card"><h3>Testing</h3><p class="check">✓ Jest ✓ Supertest ✓ Coverage</p></div>
+<div class="card"><h3>Observability</h3><p class="check">✓ Logging ✓ Tracing ✓ Monitoring ✓ Profiling</p></div>
+<div class="card"><h3>Deployment</h3><p class="check">✓ CI/CD ✓ Blue-Green ✓ Canary ✓ Rolling</p></div>
+<div class="card"><h3>Database</h3><p class="check">✓ HA ✓ Replication ✓ Backups ✓ Optimization</p></div>
+<div class="card"><h3>Code Quality</h3><p class="check">✓ ESLint ✓ Prettier ✓ Husky</p></div>
+<div class="card"><h3>Projects</h3><p class="check">✓ 3–5 Production Projects ✓ E-commerce ✓ Microservices</p></div>
 </div>
 </section>
 
 <footer style="text-align:center;color:#94a3b8;padding:30px">
-<p>This expanded HTML roadmap includes the previously omitted topics such as prototypes, classes, libuv, worker threads, Node core modules, Promise methods, normalization, GIN/BRIN indexes, OAuth, monitoring, logging, Docker Compose, IAM, CloudWatch, GitHub Flow, Swagger, and production engineering concepts.</p>
+<p>This comprehensive Node.js backend roadmap includes 100+ topics covering: fundamentals, advanced JS, TypeScript, Node.js internals, Express APIs, PostgreSQL, Prisma ORM, authentication, security, Redis, WebSockets, message queues, GraphQL, microservices, Nginx, Elasticsearch, observability & tracing, error tracking, performance optimization, advanced security (SSL/TLS, encryption, key management), database replication & HA, feature flags, deployment strategies (blue-green, canary, rolling), CI/CD pipelines, Linux, Docker, AWS, code quality tools, testing, and production engineering best practices.</p>
 </footer>
 
 </div>
